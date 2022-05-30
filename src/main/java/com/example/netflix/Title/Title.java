@@ -32,7 +32,7 @@ public class Title {
 
     private String date_added;
 
-    @Range(min = 1, max = 2022, message = "release_year must be lower or equal to 2022")
+    @Range(min = 1, max = 2022, message = "Release must be between [1, 2022]")
     private String release_year;
 
     private String rating;
