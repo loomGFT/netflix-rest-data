@@ -15,6 +15,7 @@ import java.util.Objects;
 @Setter
 @Entity
 @Valid
+@Table(name="category")
 public class Category {
 
     @Id

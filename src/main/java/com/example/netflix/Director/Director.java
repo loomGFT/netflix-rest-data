@@ -15,6 +15,7 @@ import java.util.Objects;
 @Setter
 @Entity
 @Valid
+@Table(name="director")
 public class Director {
 
     @Id
@@ -25,7 +26,7 @@ public class Director {
     @NotEmpty(message = "Name cannot be empty")
     private String name;
 
-    @ManyToMany(mappedBy = "directores")
+    @ManyToMany(mappedBy = "directors")
     private List<Title> titles;
 
     public Director(String name) {
